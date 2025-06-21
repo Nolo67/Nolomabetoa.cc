@@ -85,6 +85,38 @@
     .btn:hover {
       background: #004d40;
     }
+    .floating-navbar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: white;
+  padding: 1rem 2rem;
+  margin: 2rem auto;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  position: relative;
+  top: 1rem;
+  z-index: 100;
+}
+
+.floating-navbar .nav-link {
+  color: #00695c;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.floating-navbar .nav-link:hover,
+.floating-navbar .nav-link.active {
+  background-color: #00897b;
+  color: white;
+}
     footer {
       text-align: center;
       padding: 1rem;
