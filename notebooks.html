@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero-section">
+    <div class="container">
+        <h1>Jupyter Notebooks</h1>
+        <p>Explore my data science and machine learning notebooks</p>
+    </div>
+</section>
+
+<!-- Search and Filter Section -->
+<section class="search-section">
+    <div class="container">
+        <div class="search-filter-container">
+            <form action="{{ url_for('notebooks') }}" method="get" class="search-filter-form">
+                <div class="search-box">
+                    <input type="text" 
+                           name="search" 
+                           placeholder="Search notebooks..." 
+                           value="{{ current_search }}"
+                           class="search-input">
+                    <button type="submit" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                
+                <div class="filter-box">
+                    <select name="tech" class="tech-filter" onchange="this.form.submit()">
+                        <option value="">All Technologies</option>
+                        {% for tech in technologies %}
+                        <option value="{{ tech }}" {% if tech == current_tech %}selected{% endif %}>
+                            {{ tech }}
+                        </option>
+                        {% endfor %}
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Notebooks Grid Section -->
+<section class="notebooks-section">
+    <div class="container">
+        <div class="notebooks-grid">
+            {% if notebooks %}
+                {% for notebook in notebooks %}
+                <div class="notebook-card">
+                    <div class="notebook-content">
+                        <h3>{{ notebook.title }}</h3>
+                        <p>{{ notebook.description }}</p>
+                        <div class="notebook-meta">
+                            <span><i class="far fa-calendar"></i> {{ notebook.date }}</span>
+                        </div>
+                        
+                        <!-- Categories -->
+                        {% if notebook.categories %}
+                        <div class="tech-section">
+                            <h4>Categories</h4>
+                            <div class="tech-stack">
+                                {% for category in notebook.categories %}
+                                <span class="tech-tag category-tag">{{ category }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        <!-- Libraries -->
+                        {% if notebook.libraries %}
+                        <div class="tech-section">
+                            <h4>Libraries</h4>
+                            <div class="tech-stack">
+                                {% for library in notebook.libraries %}
+                                <span class="tech-tag library-tag">{{ library }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                        
+                        <div class="notebook-links">
+                            <a href="{{ url_for('view_notebook', filename=notebook.filename) }}" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-book-open"></i> View Notebook
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            {% else %}
+                <div class="no-results">
+                    <p>No notebooks found matching your search criteria.</p>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% endblock %} 

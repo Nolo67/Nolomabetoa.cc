@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="{{ url_for('index') }}" class="nav-link"><i class="fas fa-home"></i> Home</a>
+            <a href="{{ url_for('projects') }}" class="nav-link"><i class="fas fa-code"></i> Projects</a>
+            <a href="{{ url_for('notebooks') }}" class="nav-link"><i class="fas fa-book"></i> Notebooks</a>
+            <a href="{{ url_for('contact') }}" class="nav-link active"><i class="fas fa-envelope"></i> Contact</a>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <section class="contact-section">
+            <h2><i class="fas fa-envelope"></i> Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> Email: nolomabetoa@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Location: San Francisco, CA</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/yourprofile" class="social-link" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/yourusername" class="social-link" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://kaggle.com/yourusername" class="social-link" target="_blank">
+                            <i class="fab fa-kaggle"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h3>Send me a Message</h3>
+                    <form action="{{ url_for('contact') }}" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Nolo Mabetoa. All rights reserved.</p>
+    </footer>
+</body>
+</html>
