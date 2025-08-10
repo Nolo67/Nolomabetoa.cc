@@ -108,6 +108,16 @@ body {
     opacity: 0.9;
 }
 
+.profile-photo {
+  max-width: 250px;     /* Limit size */
+  width: 100%;          /* Responsive */
+  height: auto;         /* Maintain aspect ratio */
+  border-radius: 10px;  /* Rounded corners */
+  display: block;       /* Prevents text wrapping around image */
+  margin: 0 auto;       /* Center image horizontally */
+}
+
+
 /* Update existing styles for new color scheme */
 .content-wrapper {
     background: var(--secondary-color);
