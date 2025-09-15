@@ -354,16 +354,6 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
 }
 
-.notebook-preview {
-    background: var(--primary-color);
-    color: var(--shadow-light);
-    padding: 25px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    box-shadow: 
-        inset 5px 5px 10px var(--shadow-dark),
-        inset -5px -5px 10px var(--shadow-light);
-}
 
 
 .project-links {
@@ -398,108 +388,6 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
-.dashboard-description,
-
-/* Notebooks Page Styles */
-.notebooks-section {
-    padding: 2rem 0;
-}
-
-.notebooks-section h2 {
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.notebooks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    padding: 1rem 0;
-}
-
-.notebook-card {
-    background: var(--secondary-color);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 
-        8px 8px 16px var(--shadow-dark),
-        -8px -8px 16px var(--shadow-light);
-    transition: transform 0.3s ease;
-}
-
-.notebook-card:hover {
-    transform: translateY(-5px);
-}
-
-.notebook-content {
-    padding: 1.5rem;
-}
-
-.notebook-content h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-.notebook-content p {
-    color: var(--text-color);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.notebook-meta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    font-size: 0.9em;
-    color: var(--text-color);
-}
-
-.notebook-meta span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.notebook-meta i {
-    color: var(--primary-color);
-}
-
-.notebook-preview {
-    background: #1e1e1e;
-    border-radius: 10px;
-    padding: 1rem;
-    margin: 1.5rem 0;
-    overflow-x: auto;
-}
-
-.notebook-preview pre {
-    margin: 0;
-    color: #d4d4d4;
-    font-family: 'Fira Code', monospace;
-    font-size: 0.9em;
-    line-height: 1.5;
-}
-
-.notebook-preview code {
-    white-space: pre;
-}
-
-.notebook-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.notebook-links .btn {
-    flex: 1;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 0.9em;
-}
 
 /* Contact Page Styles */
 .contact-container {
@@ -658,11 +546,7 @@ h1, h2, h3, h4, h5, h6 {
         grid-template-columns: 1fr;
     }
     
-    .projects-grid,
-    .notebooks-grid {
-        grid-template-columns: 1fr;
-    }
-
+    
     .project-card {
         max-width: 500px;
         margin: 0 auto;
@@ -858,65 +742,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 2rem;
 }
 
-/* Notebooks Section */
-.notebooks-section {
-    padding: 2rem 0;
-}
-
-.notebooks-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    padding: 1rem 0;
-}
-
-.notebook-card {
-    background: var(--secondary-color);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 
-        8px 8px 16px var(--shadow-dark),
-        -8px -8px 16px var(--shadow-light);
-    transition: transform 0.3s ease;
-}
-
-.notebook-card:hover {
-    transform: translateY(-5px);
-}
-
-.notebook-content {
-    padding: 1.5rem;
-}
-
-.notebook-content h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-.notebook-content p {
-    color: var(--text-color);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.notebook-meta {
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-    font-size: 0.9em;
-    color: var(--text-color);
-}
-
-.notebook-meta span {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.notebook-meta i {
-    color: var(--primary-color);
-}
 
 .tech-section {
     margin: 1rem 0;
@@ -982,18 +807,7 @@ h1, h2, h3, h4, h5, h6 {
 .library-tag:contains('Flask') { background: #000000; color: white; }
 .library-tag:contains('Django') { background: #092E20; color: white; }
 
-.notebook-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
 
-.notebook-links .btn {
-    flex: 1;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 0.9em;
-}
 
 .no-results {
     text-align: center;
@@ -1015,15 +829,8 @@ h1, h2, h3, h4, h5, h6 {
         font-size: 2rem;
     }
     
-    .notebooks-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .notebook-card {
-        max-width: 500px;
-        margin: 0 auto;
-    }
-    
+   
+   
     .search-filter-form {
         flex-direction: column;
     }
