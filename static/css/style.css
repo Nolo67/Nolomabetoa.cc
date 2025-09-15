@@ -397,6 +397,41 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Projects Page Styles */
+/* Reusable card style for dashboards and projects */
+.dashboard-card,
+.project-card {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 1100px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover,
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-card h2,
+.project-card h2 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.dashboard-description,
+.project-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    line-height: 1.6;
+}
+
 .projects-section {
     padding: 2rem 0;
 }
