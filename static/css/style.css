@@ -347,12 +347,7 @@ html {
         -8px -8px 15px rgba(255, 255, 255, 0.1);
 }
 
-.project-description {
-    font-size: 0.95rem;
-    color: #555;
-    line-height: 1.5;
-    text-align: center;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
     color: var(--shadow-light);
@@ -369,38 +364,7 @@ h1, h2, h3, h4, h5, h6 {
         inset 5px 5px 10px var(--shadow-dark),
         inset -5px -5px 10px var(--shadow-light);
 }
-/* Container for all project cards */
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem; /* space between cards */
-    padding: 3rem 2rem; /* space around the grid */
-    max-width: 1200px;
-    margin: 0 auto; /* center the grid */
-}
-/* Individual project card */
-.project-card {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    padding: 1.5rem;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-}
-.project-card h2 {
-    font-size: 1.4rem;
-    color: #2c3e50;
-    margin-bottom: 0.75rem;
-    text-align: center;
-}
 
-.project-card h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-}
 
 .project-links {
     display: flex;
@@ -408,7 +372,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 1.5rem;
 }
 
-/* Projects Page Styles */
 /* Reusable card style for dashboards and projects */
 .dashboard-card,
 .project-card {
@@ -436,107 +399,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .dashboard-description,
-.project-description {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-    text-align: center;
-    line-height: 1.6;
-}
-
-.projects-section {
-    padding: 2rem 0;
-}
-
-.projects-section h2 {
-    color: var(--primary-color);
-    margin-bottom: 2rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 2rem;
-    padding: 1rem 0;
-}
-
-.project-card {
-    background: var(--secondary-color);
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 
-        8px 8px 16px var(--shadow-dark),
-        -8px -8px 16px var(--shadow-light);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-image {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-}
-
-.project-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover .project-image img {
-    transform: scale(1.05);
-}
-
-.project-content {
-    padding: 1.5rem;
-}
-
-.project-content h3 {
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    font-size: 1.4rem;
-}
-
-.project-content p {
-    color: var(--text-color);
-    line-height: 1.6;
-    margin-bottom: 1.5rem;
-}
-
-.project-card .tech-stack {
-    margin-bottom: 1.5rem;
-}
-
-.project-card .tech-stack span {
-    background: var(--primary-color);
-    color: var(--shadow-light);
-    padding: 6px 12px;
-    border-radius: 8px;
-    margin-right: 8px;
-    margin-bottom: 8px;
-    font-size: 0.85em;
-    display: inline-block;
-}
-
-.project-links {
-    display: flex;
-    gap: 1rem;
-    margin-top: 1.5rem;
-}
-
-.project-links .btn {
-    flex: 1;
-    text-align: center;
-    padding: 10px 20px;
-    font-size: 0.9em;
-}
 
 /* Notebooks Page Styles */
 .notebooks-section {
