@@ -23,13 +23,12 @@
             <p>Interactive Tableau Dashboards</p>
         </section>
 
-        <!-- Dashboards Grid Container -->
         <div class="dashboards-container">
 
             <!-- Dashboard 1 -->
             <div class="dashboard-card">
                 <h3>Heart Data Analysis Dashboard</h3>
-                <div class='tableauPlaceholder' id='viz1' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz1'>
                     <noscript>
                         <a href='#'>
                             <img alt='Analysis of Heart Data'
@@ -56,13 +55,13 @@
                     </object>
                 </div>
                 <script type='text/javascript'>
-                    var divElement = document.getElementById('viz1');
-                    var vizElement = divElement.getElementsByTagName('object')[0];
-                    vizElement.style.width='100%';
-                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    var scriptElement = document.createElement('script');
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    var divElement1 = document.getElementById('viz1');
+                    var vizElement1 = divElement1.getElementsByTagName('object')[0];
+                    vizElement1.style.width='100%';
+                    vizElement1.style.height=(divElement1.offsetWidth*0.75)+'px';
+                    var scriptElement1 = document.createElement('script');
+                    scriptElement1.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement1.parentNode.insertBefore(scriptElement1, vizElement1);
                 </script>
                 <p>This dashboard highlights heart health data across multiple countries, showing key metrics and insights.</p>
             </div>
@@ -70,10 +69,10 @@
             <!-- Dashboard 2 -->
             <div class="dashboard-card">
                 <h3>Country Health Rankings Dashboard</h3>
-                <div class='tableauPlaceholder' id='viz2' style='position: relative'>
+                <div class='tableauPlaceholder' id='viz2'>
                     <noscript>
                         <a href='#'>
-                            <img alt='Top 39 countries health system '
+                            <img alt='Top 39 countries health system'
                                  src='https://public.tableau.com/static/images/J9/J9GQQ7FG7/1_rss.png'
                                  style='border: none'/>
                         </a>
@@ -94,20 +93,19 @@
                     </object>
                 </div>
                 <script type='text/javascript'>
-                    var divElement = document.getElementById('viz2');
-                    var vizElement = divElement.getElementsByTagName('object')[0];
-                    vizElement.style.width='100%';
-                    vizElement.style.height=(divElement.offsetWidth*0.75)+'px';
-                    var scriptElement = document.createElement('script');
-                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                    var divElement2 = document.getElementById('viz2');
+                    var vizElement2 = divElement2.getElementsByTagName('object')[0];
+                    vizElement2.style.width='100%';
+                    vizElement2.style.height=(divElement2.offsetWidth*0.75)+'px';
+                    var scriptElement2 = document.createElement('script');
+                    scriptElement2.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement2.parentNode.insertBefore(scriptElement2, vizElement2);
                 </script>
                 <p>This dashboard ranks countries based on health system performance and highlights key comparative insights.</p>
             </div>
 
-        </div> <!-- End dashboards-container -->
-
-    </div> <!-- End content-wrapper -->
+        </div>
+    </div>
 
     <footer>
         <p>&copy; 2025 Nolo Mabetoa. All rights reserved.</p>
