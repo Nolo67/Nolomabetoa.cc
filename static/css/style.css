@@ -348,10 +348,10 @@ html {
 }
 
 .project-description {
-    color: var(--text-color);
-    font-size: 0.95em;
-    margin-bottom: 15px;
-    opacity: 0.8;
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+    text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -369,20 +369,32 @@ h1, h2, h3, h4, h5, h6 {
         inset 5px 5px 10px var(--shadow-dark),
         inset -5px -5px 10px var(--shadow-light);
 }
-
-.project-card {
-    background: var(--secondary-color);
-    color: var(--text-color);
-    padding: 2rem;
-    border-radius: 20px;
-    box-shadow: 
-        8px 8px 16px var(--shadow-dark),
-        -8px -8px 16px var(--shadow-light);
-    transition: transform 0.3s ease;
+/* Container for all project cards */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem; /* space between cards */
+    padding: 3rem 2rem; /* space around the grid */
+    max-width: 1200px;
+    margin: 0 auto; /* center the grid */
 }
-
+/* Individual project card */
+.project-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 1.5rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
 .project-card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+.project-card h2 {
+    font-size: 1.4rem;
+    color: #2c3e50;
+    margin-bottom: 0.75rem;
+    text-align: center;
 }
 
 .project-card h3 {
