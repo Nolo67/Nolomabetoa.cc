@@ -471,6 +471,56 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+.dashboards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 1rem;
+}
+
+.dashboard-card {
+    background: var(--secondary-color);
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 8px 8px 16px var(--shadow-dark),
+                -8px -8px 16px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 12px 12px 24px var(--shadow-dark),
+                -12px -12px 24px var(--shadow-light);
+}
+
+.dashboard-card iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.dashboard-card:hover iframe {
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.dashboard-card p {
+    color: var(--text-color);
+    text-align: center;
+    line-height: 1.6;
+}
+
 /* Reusable card style for dashboards and projects */
 .dashboard-card,
 .project-card {
