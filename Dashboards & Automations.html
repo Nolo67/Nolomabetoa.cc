@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Portfolio</title>
+    <title>Dashboards - Portfolio</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-content">
-            <a href="index.html" class="nav-link "><i class="fas fa-home"></i> Home</a>
+            <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
             <a href="projects.html" class="nav-link"><i class="fas fa-code"></i> Projects</a>
             <a href="notebooks.html" class="nav-link"><i class="fas fa-book"></i> Notebooks</a>
             <a href="dashboards.html" class="nav-link active"><i class="fas fa-chart-bar"></i> Dashboards & Automations</a>
@@ -20,35 +20,56 @@
 
     <div class="content-wrapper">
         <section class="hero-section">
-            <h1>Nolo Mabetoa</h1>
-            <p>Data Science & Analytics</p>
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/nolo-mabetoa/" class="btn" target="_blank">
-                    <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://www.kaggle.com/lehlogonolomabetoa" class="btn" target="_blank">
-                    <i class="fab fa-kaggle"></i> Kaggle
-                </a>
-            </div>
+            <h1>Dashboards & Automations</h1>
+            <p>Interactive Tableau Dashboards</p>
         </section>
 
-        <section class="about-section">
-            <div class="about-container">
-                <div class="profile-image-container">
-                    <img src="static/_ECP5739.jpg" alt="Nolo Mabetoa" class="profile-image">
-                </div>
-                <div class="bio-text">
-                    <h2>About Me</h2>
-                    <p>I am a Data Analyst and Machine Learning enthusiast currently pursuing my studies at Hult International Business School. With a strong foundation in Python and SQL, I focus on practical applications of data science to solve real-world problems.</p>
-                    <p>My passion lies in transforming complex data into actionable insights and creating meaningful impact through data-driven approaches.</p>
-                    <div class="tech-stack">
-                        <span>Python</span>
-                        <span>SQL</span>
-                        <span>Machine Learning</span>
-                        <span>Data Analysis</span>
-                    </div>
-                </div>
+        <!-- Tableau Dashboard Section -->
+        <section class="dashboard-section">
+            <h2>Heart Data Analysis Dashboard</h2>
+            <div class='tableauPlaceholder' id='viz1757955625937' style='position: relative'>
+                <noscript>
+                    <a href='#'>
+                        <img alt='Analysis of Heart Data'
+                             src='https://public.tableau.com/static/images/He/HeartDataanalysis/AnalysisofHeartData/1_rss.png'
+                             style='border: none'/>
+                    </a>
+                </noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='HeartDataanalysis/AnalysisofHeartData' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                           value='https://public.tableau.com/static/images/He/HeartDataanalysis/AnalysisofHeartData/1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='en-US' />
+                    <param name='filter' value='publish=yes' />
+                </object>
             </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1757955625937');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+                if (divElement.offsetWidth > 800) {
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '827px';
+                } else if (divElement.offsetWidth > 500) {
+                    vizElement.style.width = '1000px';
+                    vizElement.style.height = '827px';
+                } else {
+                    vizElement.style.width = '100%';
+                    vizElement.style.height = '1877px';
+                }
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);
+            </script>
         </section>
     </div>
 
@@ -56,4 +77,4 @@
         <p>&copy; 2025 Nolo Mabetoa. All rights reserved.</p>
     </footer>
 </body>
-</html> 
+</html>
