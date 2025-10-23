@@ -564,20 +564,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-/* ------------------------------------------------- */
-/* Gallery Container */
+/* ------------------- */
+/* Gallery Cards */
 .cards-container {
     display: flex;
-    flex-direction: column; /* stack gallery cards vertically */
-    gap: 40px; /* spacing between cards */
+    flex-direction: column;
+    gap: 40px;
     padding: 20px;
 }
 
-/* ------------------------------------------------- */
-/* Individual Gallery Card */
 .gallery-card {
-    width: 100%;
-    background-color: #fff; /* card look */
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0,0,0,0.1);
@@ -589,51 +586,26 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 12px 12px 24px rgba(0,0,0,0.15), -12px -12px 24px rgba(255,255,255,0.1);
 }
 
-/* ------------------------------------------------- */
-/* Gallery Card Titles */
 .gallery-card h2 {
-    font-size: 1.8rem;
-    color: #222;
-    margin-bottom: 20px;
     text-align: center;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
-/* Gallery Card Paragraphs / Descriptions */
 .gallery-card p {
+    color: var(--text-color);
     font-size: 1rem;
-    line-height: 1.8;
-    color: #333;
+    line-height: 1.6;
     margin-bottom: 15px;
 }
 
-/* Lists inside Gallery Cards */
-.gallery-card ul {
-    line-height: 1.8;
-    font-size: 16px;
-    color: #333;
-    padding-left: 20px;
-}
-
-.gallery-card ul li {
-    margin-bottom: 10px;
-}
-
-/* Nested Lists */
-.gallery-card ul li ul {
-    padding-left: 20px;
-    margin-top: 5px;
-}
-
-.gallery-card ul li ul li {
-    margin-bottom: 5px;
-    font-size: 15px;
-}
-
-/* Images and iframes inside gallery cards */
 .gallery-card img,
 .gallery-card iframe {
     width: 100%;
     border-radius: 10px;
+    display: block;
+    margin: 10px 0;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -643,8 +615,18 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 12px rgba(0,0,0,0.2);
 }
 
-/* ------------------------------------------------- */
-/* Responsive Adjustments */
+/* Lists inside gallery */
+.gallery-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.gallery-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
     .gallery-card {
         padding: 15px;
@@ -656,7 +638,7 @@ h1, h2, h3, h4, h5, h6 {
 
     .gallery-card p,
     .gallery-card ul li {
-        font-size: 0.95rem;
+        font-size: 0.9rem;
     }
 }
 
