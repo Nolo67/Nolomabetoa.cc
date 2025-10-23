@@ -566,6 +566,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------- */
 /* Gallery Cards */
+
+.gallery-card {
+    background: var(--secondary-color); /* e3f0f1 */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 
+        8px 8px 16px var(--shadow-dark),
+        -8px -8px 16px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        12px 12px 20px var(--shadow-dark),
+        -12px -12px 20px var(--shadow-light);
+}
+
 .cards-container {
     display: flex;
     flex-direction: column;
@@ -573,18 +591,6 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
 }
 
-.gallery-card {
-    background: var(--bg-color);
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.gallery-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 12px 12px 24px rgba(0,0,0,0.15), -12px -12px 24px rgba(255,255,255,0.1);
-}
 
 /* Make all iframes inside gallery cards responsive */
 .gallery-card iframe {
