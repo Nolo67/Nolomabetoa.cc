@@ -586,6 +586,15 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 12px 12px 24px rgba(0,0,0,0.15), -12px -12px 24px rgba(255,255,255,0.1);
 }
 
+/* Make all iframes inside gallery cards responsive */
+.gallery-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Maintains 16:9 ratio */
+    border: 0;
+    border-radius: 15px; /* optional: rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* optional: subtle shadow */
+}
+
 .gallery-card h2 {
     text-align: center;
     color: var(--text-color);
