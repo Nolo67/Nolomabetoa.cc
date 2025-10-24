@@ -566,6 +566,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* ------------------- */
 /* Gallery Cards */
+.gallery-page {
+    background: linear-gradient(135deg, #e3f0f1, #ffffff);
+  
+}
 
 .gallery-card {
     background: var(--secondary-color); /* e3f0f1 */
