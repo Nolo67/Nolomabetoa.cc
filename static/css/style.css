@@ -563,6 +563,106 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+
+/* ------------------- */
+/* Gallery Cards */
+.gallery-page {
+    background: linear-gradient(165deg, #e3f0f1, #83d1d6);
+  
+}
+
+.gallery-card {
+    background: var(--secondary-color); /* e3f0f1 */
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 
+        8px 8px 16px var(--shadow-dark),
+        -8px -8px 16px var(--shadow-light);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 
+        12px 12px 20px var(--shadow-dark),
+        -12px -12px 20px var(--shadow-light);
+}
+
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+}
+
+
+/* Make all iframes inside gallery cards responsive */
+.gallery-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9; /* Maintains 16:9 ratio */
+    border: 0;
+    border-radius: 15px; /* optional: rounded corners */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* optional: subtle shadow */
+}
+
+.gallery-card h2 {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.gallery-card p {
+    color: var(--text-color);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.gallery-card img,
+.gallery-card iframe {
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    margin: 10px 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-card:hover img,
+.gallery-card:hover iframe {
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+/* Lists inside gallery */
+.gallery-card ul {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.gallery-card ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .gallery-card {
+        padding: 15px;
+    }
+
+    .gallery-card h2 {
+        font-size: 1.5rem;
+    }
+
+    .gallery-card p,
+    .gallery-card ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+
 /* Contact Page Styles */
 .contact-container {
     display: grid;

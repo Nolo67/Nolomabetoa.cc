@@ -13,6 +13,7 @@
             <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
             <a href="projects.html" class="nav-link"><i class="fas fa-code"></i> Projects</a>
             <a href="Dashboards.html" class="nav-link active"><i class="fas fa-chart-bar"></i> Dashboards</a>
+			<a href="gallery.html" class="nav-link"><i class="fas fa-photo-video"></i> Gallery</a>
             <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
         </div>
     </nav>
@@ -128,13 +129,32 @@
 			var scriptElement = document.createElement('script');                    
 			scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
 	vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-</script>      <p><br> <h3>Insights Summary </h3><br> <ul>      
-<li>The united States has one of the lowest rankings for a developed nation, despite the fact that the investment per capita is among the highest, this is largely because the investments are made to the private sector. 
-</li><br>
-	<li>There is no country represented from the global South</li><br>
-	<li>Europe as a whole ranks high with many countries represented in the top 49, France being number 1</li><br>
-</ul>
-</p>
+</script>    
+
+<h2 style="text-align:center; color:#2c3e50;">Key Takeaways: Country Health Rankings Dashboard</h2>
+    <br><br>
+
+  <ul style="line-height:1.8; font-size:16px; color:#333;">
+    <li><strong>France</strong> ranks <strong>1st</strong> globally, indicating the best overall health system among the 49 countries analyzed.</li>
+    
+    <li>There is a clear inverse relationship between health investment per capita and health quality ranking — higher spending does not necessarily translate to better healthcare outcomes.</li>
+    
+    <li><strong>The United States</strong>, despite investing approximately <strong>$9403 per capita</strong> in healthcare, ranks only 38th, suggesting inefficiencies due to heavy private-sector spending.</li>
+    
+    <li><strong>European countries</strong> dominate the top ranks, with many nations from Western and Northern Europe represented — showcasing strong public healthcare systems.</li>
+    
+    <li>No countries from the Global South are represented in the top 49, reflecting persistent disparities in global health infrastructure and investment.</li>
+    
+    <li>The map visualization shows that North America and Western Europe spend significantly more per capita on healthcare compared to Sub-Saharan Africa and South Asia.</li>
+    
+    <li><strong>Private vs. Public Spending</strong>: Larger dark circles indicate higher private health expenditure, whereas lighter circles represent total health expenditure — highlighting a trend where private-sector dominance often correlates with poorer overall rankings.</li>
+  </ul>
+
+  <p style="text-align:center; font-style:italic; color:#777; margin-top:20px;">
+    Visualization created in Tableau – comparing global health system rankings, spending efficiency, and regional disparities.
+  </p>
+
+			
     </section>
   </div>
 
@@ -171,14 +191,92 @@
 				scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
 				vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 			</script> <br>
-			<h3>Insights Summary </h3> <br><ul>      
-<li>The united States has one of the lowest rankings for a developed nation, despite the fact that the investment per capita is among the highest, this is largely because the investments are made to the private sector. 
-</li> <br>
-	<li>There is no country represented from the global South</li><br>
-	<li>Europe as a whole ranks high with many countries represented in the top 49, France being number 1</li><br>
-</ul>
+
+			<h2 style="text-align:center; color:#1b5e20;">Key Takeaways: WIP Sustainability Worldwide</h2>
+  <br><br>
+  <ul style="line-height:1.8; font-size:16px; color:#333;">
+    <li><strong>Global CO₂ Emissions Trends:</strong> 
+      Most regions show fluctuating emission growth rates between 2000 and 2016, with a sharp decline around 2016, likely linked to changing industrial or environmental policies.
+    </li>
+    
+    <li><strong>Regional Insights:</strong> <br>
+      <ul>
+        <li>Eastern and South-Eastern Asiahas the highest average CO₂ emissions from fuel combustion, followed by Europe & North America.</li>
+        <li>Sub-Saharan Africa and Oceania report the lowest emissions levels overall.</li>
+      </ul>
+    </li>
+    
+    <li><strong>Top Emitting Countries:</strong> <br><br>
+      <strong>The United States</strong> leads in total greenhouse gas emissions, followed by China and the Russian Federation. Japan, Germany, and Brazil also rank among the top contributors.
+    </li>
+    
+    <li><strong>Corporate Reporting:</strong> <br>
+      The United States, United Kingdom, and China have the largest number of companies reporting on sustainability metrics, reflecting stronger climate accountability frameworks in developed economies.
+    </li>
+    
+    <li><strong>Geographic Distribution:</strong> <br>
+      The global map reveals that higher emissions are concentrated in industrialized nations, while developing regions, especially in Africa and parts of Asia, contribute less but are more vulnerable to climate impacts.
+    </li>
+    
+    <li><strong>Equity & Representation:</strong> <br>
+      Once again, the Global South is underrepresented in emission reporting data, underscoring disparities in sustainability infrastructure and monitoring capacity.
+    </li>
+  </ul>
+  
+  <p style="text-align:center; font-style:italic; color:#777; margin-top:20px;">
+    Visualization created in Tableau – providing insights into global CO₂ trends, regional disparities, and corporate sustainability reporting efforts.
+  </p>
         </section>
     </div>
+
+
+	<!-- PowerBi section -->
+
+ <div class="dashboard-card">
+
+	 
+        <section class="dashboard-section">
+            <iframe title="Regional workplace score analysis " width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNWU3M2U3NDYtYmQ3Yy00YWRmLWE0MzAtZjkwMjdiNGJiZTJjIiwidCI6ImQ1MjVhM2MwLWE5ZDgtNGQyOC05ZTU5LTQwMzU4Zjc3NGYwOSJ9" frameborder="0" allowFullScreen="true"></iframe>
+       <br>
+<h2 style="text-align:center;  color:#333;">
+  Key Takeaways: Workplace Equality & Gender Rights Worldwide
+</h2>
+<br><br>
+<ul style="line-height:1.8; font-size:16px; color:#333;">
+  
+  <li><strong>Global Workplace Score Trends:</strong> 
+    Scores have steadily improved from ~30 in 1980 to ~80 in 2024, reflecting progress in gender equality laws globally.
+  </li>
+  
+  <li><strong>Regional Insights:</strong><br>
+    <ul>
+      <li><strong>High-income OECD</strong> leads with the highest average Workplace Score (~80+), setting the benchmark for gender equality standards.</li>
+      <li>Regions like <strong>Sub-Saharan Africa</strong> and <strong>Middle East & North Africa</strong> lag behind (~30–40), indicating significant gaps in workplace rights.</li>
+    </ul>
+  </li>
+  
+  <li><strong>Legal Rights Indicators:</strong><br>
+    Many economies still lack legislation on sexual harassment and equal job access, despite global improvements.
+  </li>
+  
+  <li><strong>Economy Distribution:</strong><br>
+    OECD economies represent ~25% of the dataset, while developing regions account for smaller shares but face greater challenges.
+  </li>
+  
+  <li><strong>Gender Equality Benchmark:</strong><br>
+    OECD countries consistently outperform other regions, highlighting disparities in workplace protections and enforcement.
+  </li>
+</ul>
+
+<p style="text-align:center; font-style:italic; color:#777; margin-top:20px;">
+  Visualization created in Power BI – analyzing global workplace equality trends and benchmarking against OECD standards.
+</p>
+		
+		</section>
+    </div>
+	
+<!-- Last div - all visualisations must be above this line Nolo -->
+	
 </div>
       
     <footer>

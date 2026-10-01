@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Nolo's Portfolio</title>
+  <link rel="stylesheet" href="./static/css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="gallery-page">
+  <header>
+     <nav class="navbar">
+        <div class="nav-content">
+       <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
+       <a href="projects.html" class="nav-link"><i class="fas fa-code"></i> Projects</a>
+       <a href="Dashboards.html" class="nav-link"><i class="fas fa-book"></i> Dashboards</a>
+       <a href="gallery.html" class="nav-link active"><i class="fas fa-photo-video"></i> Gallery</a>
+       <a href="contact.html" class="nav-link"><i class="fas fa-envelope"></i> Contact</a>
+       </div>
+    </nav>
+  </header>
+
+
+
+  
+
+  <main style="max-width:1000px; margin:auto; padding:20px;">
+    <h1 style="text-align:center;">Gallery</h1>
+    <p style="text-align:center;">Welcome to my gallery of data projects, automation demos, and visuals.</p>
+
+    <div class="cards-container">
+        <!-- Gallery Card 1 -->
+        <div class="gallery-card">
+            <h2>Zapier Workflow Demo</h2>
+            <div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/ThCBuJS95Xw" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
+<br><br>
+    <p>This automation improves sales team efficiency by linking lead capture, follow-ups, and internal communications into a seamless, fully automated workflow. Each step triggers the next, reducing manual work, preventing errors, and ensuring timely action on every lead.</p>
+    
+     <h2>Step-by-Step Workflow</h2>
+          
+    <ol>
+        <li>Customer receives an email inviting them to fill out a Google Form.</li>
+        <li>Upon submission, the Google Form updates a live Google Sheet with the new lead.</li>
+        <li>Zapier detects the new row in the Google Sheet and triggers an automated follow-up email through Calendly.</li>
+        <li>After the email is sent, Zapier posts the lead information to the appropriate Slack channel based on department.</li>
+        <li>Slack generates a ticket number for supervisors to assign follow-up tasks to team members.</li>
+        <li>The Google Sheet is updated automatically to log the completed actions for tracking and reporting.</li>
+    </ol>
+
+    <p>Overall, this workflow represents a powerful process improvement system that increases efficiency, reduces human error, and ensures leads are followed up systematically—perfect for scaling sales operations effectively.</p>
+
+    <ul>
+        <li><strong>Tech Stack:</strong> Google Forms, Google Sheets, Zapier, Calendly, Slack</li>
+        <li><strong>Usefulness:</strong> Streamlines lead management, ensures real-time database updates, improves team coordination, and enhances process efficiency.</li>
+    </ul>
+</div>
+        <!-- Gallery Card 2 -->
+        <div class="gallery-card">
+            <h2>Power BI Dashboard</h2>
+            <p><a href="YOUR_POWERBI_LINK" target="_blank">View interactive dashboard</a></p>
+            <p>This dashboard visualizes key business metrics and provides interactive insights for decision-making.</p>
+        </div>
+
+        <!-- Gallery Card 3 -->
+        <div class="gallery-card">
+            <h2>Sunset Over the Mountains</h2>
+            <img src="images/sunset.jpg" alt="Sunset Image">
+            <p>This photo captures the stunning sunset over the alpine peaks, highlighting vibrant colors and shadows.</p>
+            <ul>
+                <li>Location: Swiss Alps</li>
+                <li>Camera: Nikon D850</li>
+                <li>Techniques:
+                    <ul>
+                        <li>Long Exposure</li>
+                        <li>HDR Blending</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Gallery Card 4 -->
+        <div class="gallery-card">
+            <h2>Cityscape at Night</h2>
+            <img src="images/cityscape.jpg" alt="City Image">
+            <p>A breathtaking view of the city lights reflected on the river, emphasizing architectural beauty and urban life.</p>
+        </div>
+    </div>
+
+  </main>
+
+  <footer style="text-align:center; margin-top:40px;">
+    <p>&copy; 2025 Nolo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
