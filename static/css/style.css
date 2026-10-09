@@ -176,23 +176,30 @@ body {
         -3px -3px 6px var(--shadow-light);
 }
 
-.btn-download {
-  display: inline-block;
-  padding: 12px 24px;
-  background-color: var(--bg-color);
-  color:var(--primary-color);
-  text-decoration: none;
+/* Custom Pill Button Style */
+.btn-custom {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* Spacing between icon and text */
+  padding: 12px 28px;
+  background-color: #0b7a8a; 
+  color: #ffffff 
+  text-decoration: none 
+  font-family: inherit;
   font-weight: 600;
   font-size: 16px;
-  border-radius: 6px;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px; 
+  border: none;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+  cursor: pointer;
 }
 
-/* Hover effect */
-.btn-download:hover {
-  background-color: #004d99;  
-  transform: translateY(-2px);
+/* Hover State */
+.btn-custom:hover {
+  background-color: #085a66; /* Darker teal on hover */
+  color: #ffffff !important;
+  text-decoration: none !important;
 }
 
 /* Category tags */
