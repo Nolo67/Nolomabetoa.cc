@@ -176,31 +176,7 @@ body {
         -3px -3px 6px var(--shadow-light);
 }
 
-/* Custom Pill Button Style */
-.btn-custom {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px; /* Spacing between icon and text */
-  padding: 12px 28px;
-  background-color: #0b7a8a; 
-  color: #ffffff 
-  text-decoration: none 
-  font-family: inherit;
-  font-weight: 600;
-  font-size: 16px;
-  border-radius: 16px; 
-  border: none;
-  transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
-  cursor: pointer;
-}
 
-/* Hover State */
-.btn-custom:hover {
-  background-color: #085a66; /* Darker teal on hover */
-  color: #ffffff !important;
-  text-decoration: none !important;
-}
 
 /* Category tags */
 .tech-tag:contains('Data Analysis'),
